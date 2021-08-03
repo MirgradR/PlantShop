@@ -1,0 +1,100 @@
+.presentation__store {
+    background: url('PlantsImages/PlantShopBackgroundService.png') no-repeat center center;
+    background-size: cover;
+    max-width: 100%;
+    height: 900px; 
+}
+.service__main {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.service__body .main-title {
+    max-width: 500px;
+    font-size: 80px;
+    text-align: start;
+    margin-bottom: 40px;
+}
+.service__body .main-description {
+    font-size: 24px;
+    text-align: start;
+}
+.service__card {   
+    background: url('PlantsImages/ServiceCard.png') no-repeat;
+    width: 900px;
+    height: 600px;
+    border-radius: 16px;
+    
+
+
+}
+.service__body {
+    max-width: 500px;
+    height: 356px; 
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+.service__body .btn-service {
+    max-width: 260px;
+}
+@media (max-width: 1024px) {
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 60px;
+    }
+    .service__body .main-description {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 50px;
+    }
+    .service__body .main-description {
+        font-size: 20px;
+    }
+    .service__card {  
+        margin-top: 250px;
+    }
+}
+@media (max-width: 450px) {
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 40px;
+    }
+    .service__body .main-description {
+        font-size: 20px;
+    }
+    .service__card {  
+        margin-top: 250px;
+    }
+}
+@media (max-width: 350px) {
+    .service__card { 
+        height: 400px;
+     }
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 30px;
+    }
+    .service__body .main-description {
+        font-size: 16px;
+    }
+    .service__body .btn-service {
+        font-size: 16px;
+        max-width: 260px;
+        padding: 14px;
+    }
+}
+@media (max-width: 290px) {
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 25px;
+    }
+    .service__body .main-description {
+        font-size: 14px;
+    }
+}

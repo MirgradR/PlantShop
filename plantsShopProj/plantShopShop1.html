@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable = no, initial – scale = 1.0, maximum – scale = 1.0, minimum – scale = 1.0">
+        <title>Plant Shop</title>
+        <link rel="stylesheet" href="plantsShop.css">   
+        <link rel="stylesheet" href="plantShopShop1.css">   
+    </head>
+    <body>
+        <div class="home__page">
+            <div class="presentation__store">
+                <header>
+                    
+                    <div class="burger_menu"><span></span></div>
+                    <a href="plantsShopHome.html"><img class="header__logo" src="PlantsImages/PlantShopLogo.png" alt="logo"></a>
+                    <nav class="header__navigation">
+                        <ul class="header__navigation-items">
+                            <li class="nav-home"><a href="plantsShopHome.html">Home</a></li>
+                            <li><a href="plantsShopService.html">Service</a></li>
+                            <li><a href="https://bloomscape.com/plant-life/">Blog</a></li>
+                            <li class="shopList">
+                                <a href="plantsShopShop.html">Shop</a>
+                                <ul class="navigation__sub-menu">
+                                    <li><a href="#">Foliage</a></li>
+                                    <li><a href="#">Pucculent</a></li>
+                                    <li><a href="#">Flower</a></li>
+                                    <li><a href="#">Fruit</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="plantShopLocation.html">Location</a></li>
+                        </ul>
+                    </nav>
+                    <button class="check-out">Check out(<span>0</span>)</button>
+                </header>
+                <div class="main__home">
+                    <h1 class="main-title">Foliage for <span>plants</span>.</h1>
+                    <p class="main-description">Add some color to your home, give it a little attention, the plants will accompany you quietly</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop__menu">
+            <div class="shop__items open-shoplist">
+                <div class="shop__window ">
+                    <h2 class="title-name">Foliage for plants</h2>
+                    <h3 class="title-count">21 plants</h3>
+                    <ul class="shop__list">
+                        <li>Calathea Silhouette</li>
+                        <li>Calathea Veitchiana Hook.</li>
+                        <li>Calathea Orbifolia</li>
+                        <li>Calathea Minature</li>
+                        <li>Calathea Lietzei ‘Fusion’</li>
+                        <li>Monstera Deliciosa</li>
+                        <li>Anthurium Clarinervium</li>
+                        <li>Fancy-leaf Caladium</li>
+                        <li>Billbergia Viridis</li>
+                    </ul>
+                </div>
+                <div class="btn-block">
+                    <button class="btn-shop"></button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close">X</a>
+                    <form id="form">
+                        <legend>Enter your details</legend>
+                        <label for="name">First Name:</label>
+                        <input type="text" id="name" name="name" class="name">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" class="lastname">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="email">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" class="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
+                        <div class="Form__checkbox">
+                            <input type="checkbox" id="agreement" name="agreement" class="agreement" checked>
+                            <label for="agreement">I agree to the processing of personal data</label>
+                        </div>
+                        <button class="btn-service" type="submit">Submit</button>
+                    </form>
+                    
+                </div>
+                    
+            </div>
+        </div> 
+        <script src="plantsShop.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable = no, initial – scale = 1.0, maximum – scale = 1.0, minimum – scale = 1.0">
+        <title>Plant Shop</title>
+        <link rel="stylesheet" href="plantsShop.css">   
+    </head>
+    <body>
+        <div class="home__page">
+            <div class="presentation__store">
+                <header>
+                    
+                    <div class="burger_menu"><span></span></div>
+                    <a href="plantsShopHome.html"><img class="header__logo" src="PlantsImages/PlantShopLogo.png" alt="logo"></a>
+                    <nav class="header__navigation">
+                        <ul class="header__navigation-items">
+                            <li class="nav-home"><a href="plantsShopHome.html">Home</a></li>
+                            <li><a href="plantsShopService.html">Service</a></li>
+                            <li><a href="https://bloomscape.com/plant-life/">Blog</a></li>
+                            <li class="shopList">
+                                <a href="plantsShopShop.html">Shop</a>
+                                <ul class="navigation__sub-menu">
+                                    <li><a href="plantShopShop1.html">Foliage</a></li>
+                                    <li><a href="#">Pucculent</a></li>
+                                    <li><a href="#">Flower</a></li>
+                                    <li><a href="#">Fruit</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="plantShopLocation.html">Location</a></li>
+                        </ul>
+                    </nav>
+                    <button class="check-out">Check out(<span>0</span>)</button>
+                </header>
+                <div class="main__home">
+                    <h1 class="main-title">Let’s find your love <span>plants</span>.</h1>
+                    <p class="main-description">Add some color to your home, give it a little attention, the plants will accompany you quietly</p>
+                </div>
+                <div class="footer__home">
+                    <img src="PlantsImages\iqonHome1.png" alt="iqon1" class="footer__item">
+                    <img src="PlantsImages\iqonHome2.png" alt="iqon2" class="footer__item">
+                    <img src="PlantsImages\iqonHome3.png" alt="iqon3" class="footer__item">
+                    <img src="PlantsImages\iqonHome4.png" alt="iqon4" class="footer__item">
+                </div>  
+            </div>
+            <div class="presentation__service">
+                <div class="presentation__service-content">
+                    <div class="information__service">
+                        <button class="btn-service darkgreen">Try for service</button>
+                        <a href="plantsShopShop.html">Get a beautiful home</a>
+                        <p>If you don’t know what plants you can add to the space<br>
+                            We can provide you with selected plants<br>
+                            And configure your space</p>
+                    </div>
+                    <div class="product__range">
+                        <h3 class="product__range-title">4 types of plants</h3>
+                        <div class="product__range-cards">
+                            <a href="plantShopShop1.html"><img src="PlantsImages\HomeCardFoliage.png" alt="Foliage" class="product-card"></a>
+                            <a href="#"><img src="PlantsImages\HomeCardPucculent.png" alt="Pucculent" class="product-card"></a>
+                            <a href="#"><img src="PlantsImages\HomeCardFlower.png" alt="Flower" class="product-card"></a>
+                            <a href="#"><img src="PlantsImages\HomeCardFruit.png" alt="Fruit" class="product-card"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close">X</a>
+                    <form id="form">
+                        <legend>Enter your details</legend>
+                        <label for="name">First Name:</label>
+                        <input type="text" id="name" name="name" class="name">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" class="lastname">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="email">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" class="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
+                        <div class="Form__checkbox">
+                            <input type="checkbox" id="agreement" name="agreement" class="agreement" checked>
+                            <label for="agreement">I agree to the processing of personal data</label>
+                        </div>
+                        <button class="btn-service" type="submit">Submit</button>
+                    </form>
+                    
+                </div>
+                    
+            </div>
+        </div> 
+        <script src="plantsShop.js"></script>
+    </body>
+</html>

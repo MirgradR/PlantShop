@@ -1,0 +1,103 @@
+.presentation__store {
+    background: url('PlantsImages/PlantShopBackgroundShop1.png') no-repeat center center;
+    background-size: cover;
+    max-width: 100%;
+    height: 900px; 
+    position: relative;
+}
+.shop__menu {
+    max-width: 100%;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    padding: 20px;
+    
+}
+.shop__window {
+    background-color: rgba(32, 65, 40, 0.877);
+    max-width: 400px;
+    max-height: 500px;
+    padding: 15px;
+    border-radius: 15px;
+    display: none;
+    
+}
+.title-name {
+    font-size: 30px;
+    color: rgb(221, 245, 220);
+    font-family: 'SFProDisplayBold', sans-serif;
+    margin-bottom: 8px;
+}
+.title-count {
+    font-size: 18px;
+    color: rgb(176, 236, 174);
+    margin-bottom: 10px;
+}
+.shop__list {
+    display: flex;
+    flex-direction: column;
+    
+}
+.shop__list li {
+    font-size: 16px;
+    color: rgba(228, 226, 226, 0.829);
+    padding: 8px;
+    max-width: 400px;
+    position: relative;
+}
+
+.shop__list li:after {
+    content: '';
+    background: url('PlantsImages/BasketShop.png') no-repeat;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    left: 200px;
+}
+.shop__list li:hover {
+    background-color: rgba(59, 116, 73, 0.877);
+    cursor: pointer;
+}
+.btn-block {
+    position: absolute;
+    top: 400px;
+}
+.btn-shop {
+    margin-top: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(32, 65, 40, 0.877);
+    position: relative;
+    transition: 0.3s;
+}
+.btn-shop:before {
+    content: '';
+    background-color: rgb(175, 248, 175);
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+}
+.btn-shop:after {
+    content: '';
+    background-color: rgb(175, 248, 175);
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    transform: rotate(90deg); 
+}
+.btn-shop:hover {
+    background-color: rgb(77, 165, 77);
+    
+}
+.shop__items.open-shoplist .shop__window{
+    display: block;
+    
+}
+.shop__items.open-shoplist .btn-shop{
+   transform: rotate(45deg); 
+}

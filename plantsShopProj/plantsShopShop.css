@@ -1,0 +1,281 @@
+.presentation__store {
+    background: url('PlantsImages/PlantShopBackgroundShop.png') no-repeat center center;
+    background-size: cover;
+    max-width: 100%;
+    height: 900px; 
+}
+.shop__content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.service__main {
+    display: flex;
+    padding: 10px;
+}
+.service__body .main-title {
+    max-width: 500px;
+    font-size: 80px;
+    text-align: start;
+    margin-bottom: 40px;
+    color: darkgreen;
+
+}
+.service__body .main-title span{
+    color: rgb(12, 143, 12);
+}
+.service__body .main-description {
+    font-size: 24px;
+    text-align: start;
+    max-width: 500px;
+    max-height: 300px;
+    color: rgb(255, 255, 255);
+}
+.service__card {   
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.days-waitting {
+    font-size: 18px;
+    color: rgb(217, 255, 205);
+    padding: 0 5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    max-width: 172px;
+}
+.service__body {
+    max-width: 500px;
+    height: 356px; 
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+.service__card .btn-service {
+    max-width: 280px;
+}
+@media (max-width: 1060px){
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 60px;
+    }
+}
+@media (max-width: 1024px) {
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 60px;
+    }
+    .service__body .main-description {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 50px;
+    }
+    .service__body .main-description {
+        font-size: 20px;
+        text-align: center;
+    }
+    .service__card {  
+        margin-top: 250px;
+    }
+    .days-waitting {
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px) {
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 40px;
+    }
+    .service__body .main-description {
+        font-size: 20px;
+    }
+    .service__card {  
+        margin-top: 250px;
+    }
+    .days-waitting {
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 350px) {
+    .service__card { 
+        height: 400px;
+     }
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 30px;
+    }
+    .service__body .main-description {
+        font-size: 16px;
+    }
+    .service__body .btn-service {
+        font-size: 16px;
+        max-width: 260px;
+        padding: 14px;
+    }
+}
+@media (max-width: 290px) {
+    .service__body .main-title {
+        margin-top: 0;
+        font-size: 25px;
+    }
+    .service__body .main-description {
+        font-size: 14px;
+    }
+}
+
+/* Styles for slider */
+
+.slider-body {
+    margin: 0;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(98, 184, 102, 0.774);
+    border-radius: 20px;
+    align-self: center;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    position: relative;
+}
+.slider {
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    position: relative; /**/
+    
+}
+.slides {
+    display: flex;
+    
+}
+.slides input{
+    display: none;
+}
+.slide {
+    width: 100%;
+    transition: 2s;
+}
+.slide img{
+    width: 450px;
+    margin-right: 500px;
+}   
+.slide img:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+} 
+.navigation-manual {
+    position: absolute;
+    width: 700px;
+    bottom: 7px;
+    left: -130px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.manual-btn {
+    border: 2px solid rgba(16, 44, 9, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:hover {
+    background-color: rgb(5, 116, 47);
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    top: 280.6px; /*top: 328.6px;*/
+    left: -180px; /*left: -180px;*/
+    gap: 15px;
+}
+.navigation-auto div {
+    border: 2px solid rgba(0, 0, 0, 0.151);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: rgb(5, 116, 47);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: rgb(5, 116, 47);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: rgb(5, 116, 47);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: rgb(5, 116, 47);
+}
+@media (max-width: 940px){
+    .shop__content{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        height: 100%; 
+        gap: 25px;
+    }
+    .shop__page {
+        height: 100%;
+    }
+    .presentation__store {
+        height: 100%;
+    }
+    .service__body .service__card {
+        align-items: center;
+        
+    }
+    .service__body .main-title {
+       text-align: center;
+    }
+    
+}
+@media (max-width: 770px){
+    .slider-body {
+        margin-top: 250px;
+    }
+}
+@media (max-width: 465px){
+   .slider-body {
+        width: 350px;
+        height: auto;
+    } 
+    .slide img{
+        width: 350px; 
+    }  
+    .navigation-auto {
+       top: 280px; 
+       left: -230px;
+    } 
+    .navigation-manual {
+        top: 280px; 
+        left: -180px;
+    } 
+}
